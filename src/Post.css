@@ -57,6 +57,12 @@
 
 .post__option > p {
     margin-left: 10px;
+    
+}
+
+.postred__option > p {
+    margin-left: 10px;
+    color: crimson;
 }
 
 .post__option:hover {

@@ -1,10 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import "./Header.css";
-import SearchIcon from '@material-ui/icons/Search';
+
 import { Avatar,  Button} from '@material-ui/core';
 
 
 function Header() {
+  const[show,setShow]=useState()
     return (
       <div
         className='header'
@@ -43,8 +44,10 @@ function Header() {
             <h4>Simmon Bradley</h4>
           </div>
           <div className='header__input'>
-            <SearchIcon />
-            <input placeholder='Search' type='text' />
+            {show ? <input placeholder='Search' type='text' /> : null}
+            <button className='searchbtn' onClick={() => setShow(!show)}>
+              search
+            </button>
           </div>
         </div>
       </div>
