@@ -6,11 +6,9 @@ import ReactPlayer from 'react-player';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 
 function Post({ profilePic, username, message }) {
-  const [isActive, setActive] = useState(true);
+ 
 
- const toggleClass = () => {
-   setActive(!isActive);
- };
+ 
 
   return (
     <div className='post'>
@@ -35,15 +33,11 @@ function Post({ profilePic, username, message }) {
       </div>
 
       <div className='post__options'>
-        {/* <div className='post__option'>
-          <p>Heart21</p>
-        </div> */}
-        <div
-          className={isActive ? 'post__option' : 'postred__option'}
-          onClick={toggleClass}
-        >
+
+        <div className='post__option'>
           <p>Heart21</p>
         </div>
+       
 
         <div className='header__input'>
           <ChatBubbleOutlineIcon />

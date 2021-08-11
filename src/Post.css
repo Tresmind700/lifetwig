@@ -60,10 +60,7 @@
     
 }
 
-.postred__option > p {
-    margin-left: 10px;
-    color: crimson;
-}
+
 
 .post__option:hover {
     background-color: #eff2f5;

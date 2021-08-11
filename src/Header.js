@@ -46,9 +46,10 @@ function Header() {
           <div className='header__input'>
             {show ? <input placeholder='Search' type='text' /> : null}
             <button className='searchbtn' onClick={() => setShow(!show)}>
-              search
+              show
             </button>
           </div>
+         
         </div>
       </div>
     );
